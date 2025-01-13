@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Management</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Container Styling */
+        .steps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .step-container {
+            width: calc(50% - 20px); /* Two containers per row with spacing */
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step-container:hover {
+            transform: translateY(-10px); /* Slight lift on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+        }
+
+        .step-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .step-text {
+            padding: 20px;
+        }
+
+        .step-text h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .step-text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .step-container {
+                width: 100%; /* Full width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-logo">
+            <img src="C:\my_portfolio\Logo.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <!-- Services dropdown -->
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="emailm.html">Email Management</a>
+                        <a href="Dentry.html">Data Entry</a>
+                        <a href="calender.html">Calendar Management</a>
+                        <a href="research.html">Research</a>
+                        <a href="smedia.html">Social Media Management</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="tools.html">Tools</a>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="calendar-management">
+            <h2>Calendar Management</h2>
+            <div class="steps-container">
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder1.jpg" alt="Step 1 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>1. Set Clear Priorities</h3>
+                        <p>Identify important tasks and events, and prioritize them in your calendar.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder2.jpg" alt="Step 2 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>2. Schedule Regular Check-ins</h3>
+                        <p>Block time for reviewing your calendar to ensure it aligns with your goals.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder3.jpg" alt="Step 3 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>3. Use Time Blocks</h3>
+                        <p>Allocate specific blocks of time for focused tasks and breaks to optimize productivity.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder4.jpg" alt="Step 4 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>4. Automate Reminders</h3>
+                        <p>Set automatic reminders for important meetings, deadlines, and recurring tasks.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder5.jpg" alt="Step 5 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>5. Integrate with Other Tools</h3>
+                        <p>Connect your calendar with tools like email and task management apps for seamless coordination.</p>
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="step-image">
+                        <img src="placeholder6.jpg" alt="Step 6 Image">
+                    </div>
+                    <div class="step-text">
+                        <h3>6. Review and Adjust</h3>
+                        <p>Periodically evaluate your schedule and make adjustments as needed to stay on track.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="services.html">Services</a></div>
+        </div>
+        <p>&copy; 2025 Alphonce Mutai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
