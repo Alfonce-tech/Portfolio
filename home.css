@@ -103,6 +103,98 @@ header {
         width: 100%; /* Ensures full-width links */
     }
 }
+/* General Styles for Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem; /* Large font for bigger screens */
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto; /* Ensures image scales properly */
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack image and text */
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .hero img {
+    width: 80%; /* Adjust image size */
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem; /* Further adjustment for very small screens */
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero img {
+    width: 100%; /* Full width on very small screens */
+  }
+}
 
 /* Hero Section Styling */
 .hero {
