@@ -144,8 +144,8 @@ header {
 
 .hero-text p {
     font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    line-height: auto;
+    margin-bottom: 10px;
 }
 
 /* Email Management Link Styling */
