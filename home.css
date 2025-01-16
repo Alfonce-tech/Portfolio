@@ -21,7 +21,7 @@ header {
 /* Logo styling */
 .header-logo img {
     width: 150px; /* Adjusts logo size */
-    height: 50px; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
     border-radius: 10%; /* Slightly rounds the edges */
 }
 
@@ -118,8 +118,8 @@ header {
 }
 
 .hero img {
-    width: 100%; /* Makes the image full width */
-    height: 100%; /* Ensures the full image is visible */
+    width: 70%; /* Makes the image full width */
+    height: 40%; /* Ensures the full image is visible */
     object-fit: cover; /* Prevents image distortion */
     position: absolute; /* Allows text to overlay the image */
     top: 0;
@@ -133,12 +133,12 @@ header {
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     padding: 30px;
     border-radius: 15px; /* Curved edges for the text box */
-    max-width: 60%; /* Limits the width of the text box */
+    max-width: 80%; /* Limits the width of the text box */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
 }
 
 .hero-text h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
