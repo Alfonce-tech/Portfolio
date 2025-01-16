@@ -118,8 +118,8 @@ header {
 }
 
 .hero img {
-    width: 70%; /* Makes the image full width */
-    height: 40%; /* Ensures the full image is visible */
+    width: 100%; /* Makes the image full width */
+    height: auto%; /* Ensures the full image is visible */
     object-fit: cover; /* Prevents image distortion */
     position: absolute; /* Allows text to overlay the image */
     top: 0;
