@@ -107,11 +107,31 @@ header {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
   height: 100vh; /* Full viewport height */
   box-sizing: border-box;
 }
+.hero-box {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #fff; /* Solid background to prevent stripes */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    text-align: center;
+}
+/* Hover Effects */
+.hero-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    transition: background-color 0.7s ease; /* Smooth transition */
+    }
 
 .hero-text {
   flex: 1;
@@ -238,6 +258,22 @@ header {
     font-size: 1.2em;
     line-height: auto;
     margin-bottom: 10px;
+}
+/*....*/
+
+/* Service/Portfolio Box Styles */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-box {
+        flex: 1 1 100%;
+    }
 }
 
 /* Email Management Link Styling */
@@ -377,7 +413,6 @@ header {
         flex: 1 1 100%;
     }
 }
-
 /* Footer Styling */
 footer {
     background-color: #333;
