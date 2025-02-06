@@ -400,6 +400,15 @@ header {
     color: #666;
     line-height: 1.6;
 }
+.service-box img {
+    width: 100%; /* Makes the image full width */
+    height: auto%; /* Ensures the full image is visible */
+    object-fit: cover; /* Prevents image distortion */
+    position: absolute; /* Allows text to overlay the image */
+    top:0;
+    left:0;
+    z-index:0; /* Keeps the image in the background */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
